@@ -1,0 +1,35 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:custom_data": "{x1_sockets:{empty:0b,socketed:1b,armor:1b,emerald:1b,slot:\"chest\",gem_id:\"emerald\"}}",
+    "minecraft:lore": [
+      {
+        "text": "Socket: Emerald Stride",
+        "color": "green",
+        "italic": false
+      },
+      {
+        "text": "+1 safe fall distance, +0.25 step height",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "minecraft:attribute_modifiers": [
+      {
+        "type": "minecraft:safe_fall_distance",
+        "slot": "chest",
+        "id": "x1_sockets:emerald_chest_fall",
+        "amount": 1.0,
+        "operation": "add_value"
+      },
+      {
+        "type": "minecraft:step_height",
+        "slot": "chest",
+        "id": "x1_sockets:emerald_chest_step",
+        "amount": 0.25,
+        "operation": "add_value"
+      }
+    ],
+    "minecraft:enchantment_glint_override": true
+  }
+}

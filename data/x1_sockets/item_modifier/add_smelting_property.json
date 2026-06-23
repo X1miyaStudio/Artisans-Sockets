@@ -1,0 +1,19 @@
+﻿{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:custom_data": "{x1_sockets:{empty:0b,socketed:1b,quartz:1b,auto_smelt:1b,gem_id:\"quartz\"}}",
+    "minecraft:lore": [
+      {
+        "text": "Socket: Quartz",
+        "color": "yellow",
+        "italic": false
+      },
+      {
+        "text": "Auto-smelts supported ore drops",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "minecraft:enchantment_glint_override": true
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:custom_data": "{x1_sockets:{empty:0b,socketed:1b,diamond:1b,gem_id:\"diamond\"}}",
+    "minecraft:lore": [
+      {
+        "text": "Socket: Diamond",
+        "color": "aqua",
+        "italic": false
+      },
+      {
+        "text": "+1 attack damage, +2 mining efficiency while held",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "minecraft:attribute_modifiers": [
+      {
+        "type": "minecraft:attack_damage",
+        "slot": "mainhand",
+        "id": "x1_sockets:diamond_tool_damage",
+        "amount": 1.0,
+        "operation": "add_value"
+      },
+      {
+        "type": "minecraft:mining_efficiency",
+        "slot": "mainhand",
+        "id": "x1_sockets:diamond_tool_mining",
+        "amount": 2.0,
+        "operation": "add_value"
+      }
+    ],
+    "minecraft:enchantment_glint_override": true
+  }
+}

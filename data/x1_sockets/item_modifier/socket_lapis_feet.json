@@ -1,0 +1,35 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:custom_data": "{x1_sockets:{empty:0b,socketed:1b,armor:1b,lapis:1b,slot:\"feet\",gem_id:\"lapis\"}}",
+    "minecraft:lore": [
+      {
+        "text": "Socket: Lapis Channel",
+        "color": "blue",
+        "italic": false
+      },
+      {
+        "text": "+1 oxygen bonus, +0.15 submerged mining speed",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "minecraft:attribute_modifiers": [
+      {
+        "type": "minecraft:oxygen_bonus",
+        "slot": "feet",
+        "id": "x1_sockets:lapis_feet_oxygen",
+        "amount": 1.0,
+        "operation": "add_value"
+      },
+      {
+        "type": "minecraft:submerged_mining_speed",
+        "slot": "feet",
+        "id": "x1_sockets:lapis_feet_submerged",
+        "amount": 0.15,
+        "operation": "add_value"
+      }
+    ],
+    "minecraft:enchantment_glint_override": true
+  }
+}

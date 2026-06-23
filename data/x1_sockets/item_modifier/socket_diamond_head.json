@@ -1,0 +1,35 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:custom_data": "{x1_sockets:{empty:0b,socketed:1b,armor:1b,diamond:1b,slot:\"head\",gem_id:\"diamond\"}}",
+    "minecraft:lore": [
+      {
+        "text": "Socket: Diamond Core",
+        "color": "aqua",
+        "italic": false
+      },
+      {
+        "text": "+2 max health, +1 armor toughness",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "minecraft:attribute_modifiers": [
+      {
+        "type": "minecraft:max_health",
+        "slot": "head",
+        "id": "x1_sockets:diamond_head_health",
+        "amount": 2.0,
+        "operation": "add_value"
+      },
+      {
+        "type": "minecraft:armor_toughness",
+        "slot": "head",
+        "id": "x1_sockets:diamond_head_toughness",
+        "amount": 1.0,
+        "operation": "add_value"
+      }
+    ],
+    "minecraft:enchantment_glint_override": true
+  }
+}

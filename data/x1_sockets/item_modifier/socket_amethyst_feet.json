@@ -1,0 +1,28 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:custom_data": "{x1_sockets:{empty:0b,socketed:1b,armor:1b,amethyst:1b,slot:\"feet\",gem_id:\"amethyst\"}}",
+    "minecraft:lore": [
+      {
+        "text": "Socket: Amethyst Weave",
+        "color": "light_purple",
+        "italic": false
+      },
+      {
+        "text": "+3% movement speed while worn",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "minecraft:attribute_modifiers": [
+      {
+        "type": "minecraft:movement_speed",
+        "slot": "feet",
+        "id": "x1_sockets:amethyst_feet_speed",
+        "amount": 0.03,
+        "operation": "add_value"
+      }
+    ],
+    "minecraft:enchantment_glint_override": true
+  }
+}

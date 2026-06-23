@@ -1,0 +1,56 @@
+﻿{
+    "type":  "minecraft:block",
+    "pools":  [
+                  {
+                      "rolls":  1,
+                      "entries":  [
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "minecraft:copper_ingot"
+                                      }
+                                  ],
+                      "conditions":  [
+                                         {
+                                             "condition":  "minecraft:match_tool",
+                                             "predicate":  {
+                                                               "predicates":  {
+                                                                                  "minecraft:custom_data":  "{x1_sockets:{auto_smelt:1b}}"
+                                                                              }
+                                                           }
+                                         }
+                                     ],
+                      "functions":  [
+                                        {
+                                            "function":  "minecraft:explosion_decay"
+                                        }
+                                    ]
+                  },
+                  {
+                      "rolls":  1,
+                      "entries":  [
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "minecraft:raw_copper"
+                                      }
+                                  ],
+                      "conditions":  [
+                                         {
+                                             "condition":  "minecraft:inverted",
+                                             "term":  {
+                                                          "condition":  "minecraft:match_tool",
+                                                          "predicate":  {
+                                                                            "predicates":  {
+                                                                                               "minecraft:custom_data":  "{x1_sockets:{auto_smelt:1b}}"
+                                                                                           }
+                                                                        }
+                                                      }
+                                         }
+                                     ],
+                      "functions":  [
+                                        {
+                                            "function":  "minecraft:explosion_decay"
+                                        }
+                                    ]
+                  }
+              ]
+}

@@ -1,0 +1,35 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:custom_data": "{x1_sockets:{empty:0b,socketed:1b,emerald:1b,gem_id:\"emerald\"}}",
+    "minecraft:lore": [
+      {
+        "text": "Socket: Emerald",
+        "color": "green",
+        "italic": false
+      },
+      {
+        "text": "+1.5 block reach, +1 entity reach while held",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "minecraft:attribute_modifiers": [
+      {
+        "type": "minecraft:block_interaction_range",
+        "slot": "mainhand",
+        "id": "x1_sockets:emerald_tool_block_reach",
+        "amount": 1.5,
+        "operation": "add_value"
+      },
+      {
+        "type": "minecraft:entity_interaction_range",
+        "slot": "mainhand",
+        "id": "x1_sockets:emerald_tool_entity_reach",
+        "amount": 1.0,
+        "operation": "add_value"
+      }
+    ],
+    "minecraft:enchantment_glint_override": true
+  }
+}

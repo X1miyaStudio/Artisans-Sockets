@@ -1,0 +1,9 @@
+﻿{
+  "condition": "minecraft:match_tool",
+  "predicate": {
+    "items": "#x1_sockets:socketable_items",
+    "predicates": {
+      "minecraft:custom_data": "{x1_sockets:{empty:1b}}"
+    }
+  }
+}

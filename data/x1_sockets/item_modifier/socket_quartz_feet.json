@@ -1,0 +1,35 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:custom_data": "{x1_sockets:{empty:0b,socketed:1b,armor:1b,quartz:1b,slot:\"feet\",gem_id:\"quartz\"}}",
+    "minecraft:lore": [
+      {
+        "text": "Socket: Quartz Guard",
+        "color": "yellow",
+        "italic": false
+      },
+      {
+        "text": "+1 armor toughness, +5% knockback resistance",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "minecraft:attribute_modifiers": [
+      {
+        "type": "minecraft:armor_toughness",
+        "slot": "feet",
+        "id": "x1_sockets:quartz_feet_toughness",
+        "amount": 1.0,
+        "operation": "add_value"
+      },
+      {
+        "type": "minecraft:knockback_resistance",
+        "slot": "feet",
+        "id": "x1_sockets:quartz_feet_knockback",
+        "amount": 0.05,
+        "operation": "add_value"
+      }
+    ],
+    "minecraft:enchantment_glint_override": true
+  }
+}

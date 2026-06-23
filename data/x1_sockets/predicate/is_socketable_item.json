@@ -1,0 +1,6 @@
+﻿{
+  "condition": "minecraft:match_tool",
+  "predicate": {
+    "items": "#x1_sockets:socketable_items"
+  }
+}
